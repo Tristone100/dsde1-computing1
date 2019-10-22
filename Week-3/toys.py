@@ -8,14 +8,23 @@ with functions.
 
 # write a function that adds 1
 # to the input and prints the result
+a = int(input('pleae input an interger  '))
 def inc(a):
-    print(a)
+    add = 1+ a
+    print (add)
+    return
+
+inc(a)
 
 
 # write a function that adds 1
 # to the input and returns the result
+
 def inc_return(a):
-    return # hint this is incomplete
+    add_again = a+1
+    return add_again
+
+inc_return()
 
 
 # write a function that adds
