@@ -41,14 +41,24 @@ def repeat_at_index(the_list, index):
 # write a function that checks whether the word is a palindrome, i.e. it reads
 # the same forward and backwards
 def palindrome_word(word):
-    return
+    word_a = str(word)
+    word_b = word[::-1]
+    if word_a == word_b:
+        return 'This word is palidrome'
+    else:
+        return 'This word is not palidrome'
 
 # write a function that checks whether the sentence is a palindrome, i.e. it
 # read the same forward and backward. Ignore all spaces and other characters
 # like fullstops, commas, etc. Also do not consider whether the letter is
 # capital or not. 
 def palindrome_sentence(sentence):
-    return
+    sentence_a = sentence.lower().strip().replace(" ", "")
+    sentence_b = sentence_a[::-1]
+    if sentence_a == sentence_b:
+        return 'This sentence is peledrome'
+    else:
+        return 'This sentence is not peledrome'
 
 # write a function that concatenates two sentences. First the function checks
 # whether the sentence meets the following criteria: it starts with a capital
