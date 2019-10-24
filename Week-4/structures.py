@@ -30,7 +30,10 @@ def part_reverse(the_list, beginning, end):
 # same value. For example if the_list = [0,1,2,3,4] and index = 3 the function
 # will return [0,1,2,3,3,3,4]. 
 def repeat_at_index(the_list, index):
-    return
+    for i in range(3):
+        the_list.append(index)
+        the_list.sort()
+    return the_list
 
 
 # Strings
