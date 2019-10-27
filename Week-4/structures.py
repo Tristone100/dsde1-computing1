@@ -67,8 +67,15 @@ def palindrome_sentence(sentence):
 # the end.  The concatenated sentence must have no white space at the beginning
 # or at the end and the must be exactly one space after the end of the first
 # sentence. 
-def concatenate_sentences(sentenece1, sentence2):
-    return
+def concatenate_sentences(sentence1, sentence2):
+    sentence_a = sentence1.strip().replace(" ","")
+    sentence_b = sentence2.strip().replace(" ","")
+    sentence_test = sentence_a + sentence_b
+
+    if sentence_test[0] == sentence_a[0].upper() and (sentence_test[-1] == '.' or sentence_test[-1] == '!' or sentence_test[-1] == '?'):
+        return 'These sentences meet the preamiters'
+    else:
+        return 'These sentences fail the perameters'
 
 
 # Dictionaries
